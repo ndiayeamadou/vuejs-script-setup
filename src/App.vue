@@ -3,6 +3,18 @@
   <h3 @click="handleHeadingClick">Abbreviation name : {{name}} | age : {{age}}</h3>
 </template>
 
+<script setup>
+import { ref } from 'vue'
+
+const name = ref('AMADU')
+const age = ref(32)
+
+const handleHeadingClick = () => {
+  name.value = 'ELAN'
+}
+</script>
+
+<!--
 <script>
 import { ref } from 'vue'
 
@@ -23,3 +35,4 @@ export default {
   },
 }
 </script>
+ -->
