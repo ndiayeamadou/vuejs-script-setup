@@ -1,7 +1,7 @@
 <template>
   <h2>Testing...</h2>
   <h3 @click="handleHeadingClick">Abbreviation name : {{name}} | age : {{age}}</h3>
-  <MyButton />
+  <MyButton text="Text button w/ props :-)" />
 </template>
 
 
