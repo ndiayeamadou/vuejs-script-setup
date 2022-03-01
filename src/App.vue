@@ -4,9 +4,10 @@
   <MyButton />
 </template>
 
-<!--
+
 <script setup>
 import { ref } from 'vue'
+import MyButton from "@/components/Mybutton.vue"
 
 const name = ref('AMADU')
 const age = ref(32)
@@ -15,8 +16,8 @@ const handleHeadingClick = () => {
   name.value = 'ELAN'
 }
 </script>
--->
 
+<!--
 <script>
 import { ref } from 'vue'
 import MyButton from "@/components/MyButton.vue"
@@ -44,3 +45,4 @@ export default {
 
 }
 </script>
+-->
