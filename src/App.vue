@@ -7,7 +7,7 @@
   />
 </template>
 
-<!--
+
 <script setup>
 import { ref } from 'vue'
 import MyButton from "@/components/Mybutton.vue"
@@ -18,9 +18,12 @@ const age = ref(32)
 const handleHeadingClick = () => {
   name.value = 'ELAN'
 }
+const showAlert = () => {
+  alert("Child button was clicked!")
+}
 </script>
--->
 
+<!--
 <script>
 import { ref } from 'vue'
 import MyButton from "@/components/MyButton.vue"
@@ -52,3 +55,4 @@ export default {
 
 }
 </script>
+-->
