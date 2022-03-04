@@ -1,10 +1,13 @@
 <template>
   <h2>Testing...</h2>
   <h3 @click="handleHeadingClick">Abbreviation name : {{name}} | age : {{age}}</h3>
-  <MyButton text="Text button w/ props :-)" />
+  <MyButton
+    @buttonClicked="showAlert"
+    text="Text button w/ props :-)"
+  />
 </template>
 
-
+<!--
 <script setup>
 import { ref } from 'vue'
 import MyButton from "@/components/Mybutton.vue"
@@ -16,8 +19,8 @@ const handleHeadingClick = () => {
   name.value = 'ELAN'
 }
 </script>
+-->
 
-<!--
 <script>
 import { ref } from 'vue'
 import MyButton from "@/components/MyButton.vue"
@@ -33,8 +36,12 @@ export default {
       age.value = 45
     }
 
+    const showAlert = () => {
+      alert("This is an alert, shown when clicked button!")
+    }
+
     return {
-      age, name, handleHeadingClick
+      age, name, handleHeadingClick, showAlert
     }
     
   },
@@ -45,4 +52,3 @@ export default {
 
 }
 </script>
--->
