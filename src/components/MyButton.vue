@@ -1,6 +1,6 @@
 <template>
     <!-- <button>{{ text }}</button> OR -->
-    <button @click="$emit('buttonClicked')">
+    <button @click="handleButtonClicked">
         {{ props.text }}
     </button>
 </template>
@@ -11,9 +11,11 @@ const props = defineProps({
         type: String,
         default: "No text specified"
     },
-    //emits: ['buttonClicked'] // it works also
 })
-const emits = defineEmits(['buttonClicked'])
+const emit = defineEmits(['buttonClicked'])
+const handleButtonClicked = () => {
+    emit('buttonClicked')
+}
 // access to this props in script section
 console.log(props.text);
 </script>
