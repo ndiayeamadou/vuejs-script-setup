@@ -14,7 +14,7 @@ const props = defineProps({
 })
 const emit = defineEmits(['buttonClicked'])
 const handleButtonClicked = () => {
-    emit('buttonClicked')
+    emit('buttonClicked', 99)
 }
 // access to this props in script section
 console.log(props.text);

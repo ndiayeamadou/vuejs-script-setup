@@ -18,8 +18,10 @@ const age = ref(32)
 const handleHeadingClick = () => {
   name.value = 'ELAN'
 }
-const showAlert = () => {
-  alert("Child button was clicked!")
+const showAlert = (newAge) => {
+  alert(newAge)
+  //alert("Child button was clicked!")
+  age.value = newAge
 }
 </script>
 
